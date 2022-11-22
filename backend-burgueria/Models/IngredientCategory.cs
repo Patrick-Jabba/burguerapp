@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace backend_burgueria.Models
 {
-    [Table("category")]
+  [Table("category")]
   public class IngredientCategory
   {
     [Key]

@@ -16,8 +16,6 @@ namespace backend_burgueria.Models
     [JsonIgnore]
     public int IdCategory { get; set; }
 
-    // public virtual Product Product { get; set; }
-
     public virtual List<Product> Products {get; set;}
 
     public int ProductId {get; set;}

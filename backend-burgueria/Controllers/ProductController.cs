@@ -18,7 +18,7 @@ namespace backend_burgueria.Controllers
     public IActionResult GetProducts()
     {
       var lista = _context.Products.ToList();
-      
+
       return Ok(lista);
     }
 
@@ -43,12 +43,20 @@ namespace backend_burgueria.Controllers
       return Ok(product);
     }
 
+    [HttpGet("GetByName")]
+    public IActionResult GetProductByName(string name)
+    {
+      var products = _context.Products.Where(x => x.Name.Contains(name));
+
+      return Ok(products);
+    }
+
     [HttpPut("{id}")]
     public IActionResult Update(int id, Product product)
     {
       var dataBaseProduct = _context.Products.Find(id);
 
-      if(dataBaseProduct == null)
+      if (dataBaseProduct == null)
       {
         return NotFound();
       }
@@ -56,11 +64,26 @@ namespace backend_burgueria.Controllers
       dataBaseProduct.Name = product.Name;
       dataBaseProduct.Description = product.Description;
       dataBaseProduct.Price = product.Price;
-      dataBaseProduct.IngredientId = product.IngredientId;
+      // dataBaseProduct.IngredientId = product.IngredientId;
 
       _context.Products.Update(dataBaseProduct);
       _context.SaveChanges();
       return Ok(dataBaseProduct);
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult Delete(int id)
+    {
+      var dataBaseProduct = _context.Products.Find(id);
+
+      if (dataBaseProduct == null)
+      {
+        return NotFound();
+      }
+
+      _context.Products.Remove(dataBaseProduct);
+      _context.SaveChanges();
+      return NoContent();
     }
   }
 }

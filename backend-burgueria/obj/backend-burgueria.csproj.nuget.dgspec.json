@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj": {}
+    "C:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj": {}
   },
   "projects": {
-    "c:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj": {
+    "C:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj",
+        "projectUniqueName": "C:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj",
         "projectName": "backend-burgueria",
-        "projectPath": "c:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj",
+        "projectPath": "C:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj",
         "packagesPath": "C:\\Users\\patrickmf.dsn.pack\\.nuget\\packages\\",
-        "outputPath": "c:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\obj\\",
+        "outputPath": "C:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patrickmf.dsn.pack\\AppData\\Roaming\\NuGet\\NuGet.Config"

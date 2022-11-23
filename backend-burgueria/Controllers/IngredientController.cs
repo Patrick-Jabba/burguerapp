@@ -14,11 +14,11 @@ namespace backend_burgueria.Controllers
       _context = context;
     }
 
-    public IActionResult Create(Ingredient ingredient)
-    {
-      _context.Add(ingredient);
-      _context.SaveChanges();
-      return Ok(ingredient);
-    }
+    // public IActionResult Create(Ingredient ingredient)
+    // {
+    //   _context.Add(ingredient);
+    //   _context.SaveChanges();
+    //   return Ok(ingredient);
+    // }
   }
 }

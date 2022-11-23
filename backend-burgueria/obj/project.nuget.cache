@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UVc0k4hrUeaMCjMiAhOCAA9nY1bTA8voUjBt23Wt2NbYp5cf0mb2zOfpLYZFcupbyoqpDW5jWbqFDdRINV5Mrg==",
+  "dgSpecHash": "amFicpFI9TBCnucxuvtNDPfpCa7CcmypN6toClnE9NqNggezHBF07ops/GzkdSYb6l6CwUDD0R1ZjQwfTY8o7w==",
   "success": true,
-  "projectFilePath": "c:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj",
+  "projectFilePath": "C:\\Code\\Vue\\Matheus Battisti\\backend-burgueria\\backend-burgueria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patrickmf.dsn.pack\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\patrickmf.dsn.pack\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",

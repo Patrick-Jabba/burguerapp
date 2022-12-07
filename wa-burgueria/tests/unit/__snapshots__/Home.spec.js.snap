@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should render home correctly 1`] = `
+<banner-stub></banner-stub>
+<div class="main-container">
+  <h1>Peça seu burger:</h1>
+  <burger-form-stub></burger-form-stub>
+</div>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IngredientsService 🍔🍔🍔 should create a Order with a burger product 1`] = `
+Object {
+  "carne": "Picanha",
+  "id": 3,
+  "nome": "Jose Cabaninha",
+  "opcionais": Array [
+    "Cheddar",
+    "Tomate",
+  ],
+  "pao": "Integral",
+  "status": "Solicitado",
+}
+`;
+
+exports[`IngredientsService 🍔🍔🍔 should return a list of burgers from backend 1`] = `
+Object {
+  "burgers": Array [
+    Object {
+      "carne": "Alcatra",
+      "id": 1,
+      "nome": "Mariane Squenquel Peixe",
+      "opcionais": Array [
+        "Bacon",
+        "Salame",
+      ],
+      "pao": "Integral",
+      "status": "Solicitado",
+    },
+    Object {
+      "carne": "Picanha",
+      "id": 2,
+      "nome": "Sharpzin",
+      "opcionais": Array [
+        "Cheddar",
+        "Tomate",
+        "Pepino",
+      ],
+      "pao": "3 Queijos",
+      "status": "Finalizado",
+    },
+  ],
+}
+`;

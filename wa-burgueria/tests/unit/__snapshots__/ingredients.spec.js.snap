@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IngredientsService 🍖 🍔 🧀 should return a list of ingredients from backend 1`] = `
+Object {
+  "ingredientes": Object {
+    "carnes": Array [
+      Object {
+        "id": 1,
+        "tipo": "Maminha",
+      },
+      Object {
+        "id": 2,
+        "tipo": "Alcatra",
+      },
+      Object {
+        "id": 3,
+        "tipo": "Picanha",
+      },
+      Object {
+        "id": 4,
+        "tipo": "Veggie burger",
+      },
+    ],
+    "opcionais": Array [
+      Object {
+        "id": 1,
+        "tipo": "Bacon",
+      },
+      Object {
+        "id": 2,
+        "tipo": "Cheddar",
+      },
+      Object {
+        "id": 3,
+        "tipo": "Salame",
+      },
+      Object {
+        "id": 4,
+        "tipo": "Tomate",
+      },
+      Object {
+        "id": 5,
+        "tipo": "Cebola roxa",
+      },
+      Object {
+        "id": 6,
+        "tipo": "Pepino",
+      },
+    ],
+    "paes": Array [
+      Object {
+        "id": 1,
+        "tipo": "Italiano Branco",
+      },
+      Object {
+        "id": 2,
+        "tipo": "3 Queijos",
+      },
+      Object {
+        "id": 3,
+        "tipo": "Parmesão e Orégano",
+      },
+      Object {
+        "id": 4,
+        "tipo": "Integral",
+      },
+    ],
+  },
+}
+`;

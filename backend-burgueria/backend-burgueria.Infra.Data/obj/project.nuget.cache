@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "J1wIWqG9M1vOStIA1FO+jnaJhV4jQQzvgYaWF3UTgV2P6al3Z4JsDxlSYd1HntKguSH+McoB1HhXnwNsKP+wyA==",
+  "dgSpecHash": "zbDEBR8/FTU3LqQr+5JMhdSCZemHPtm5STatafTryGXy4SwVHPaF6F7fkOMUB+LtzuKmsiLrZikUuARKPDEmmw==",
   "success": true,
   "projectFilePath": "D:\\Meus Projetos\\Projetos de Amigos\\Fork\\burguerapp\\backend-burgueria\\backend-burgueria.Infra.Data\\backend-burgueria.Infra.Data.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Athos\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.3\\microsoft.entityframeworkcore.analyzers.7.0.3.nupkg.sha512",
     "C:\\Users\\Athos\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.3\\microsoft.entityframeworkcore.design.7.0.3.nupkg.sha512",
     "C:\\Users\\Athos\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.3\\microsoft.entityframeworkcore.relational.7.0.3.nupkg.sha512",
+    "C:\\Users\\Athos\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.3\\microsoft.entityframeworkcore.tools.7.0.3.nupkg.sha512",
     "C:\\Users\\Athos\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Athos\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\Athos\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

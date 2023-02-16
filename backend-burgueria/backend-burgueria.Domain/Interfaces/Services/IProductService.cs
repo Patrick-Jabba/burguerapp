@@ -9,5 +9,6 @@ namespace backend_burgueria.Services
         void DeleteProduct(int id);
         Product GetProductById(int id);
         IEnumerable<Product> GetAllProduct();
+        IEnumerable<Product> GetProductByName(string name);
     }
 }

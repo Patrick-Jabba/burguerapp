@@ -36,6 +36,11 @@ namespace backend_burgueria.Application.Services
         public Product GetProductById(int id)
         {
             return _productRepository.GetById(id);
-        }        
+        }
+
+        public IEnumerable<Product> GetProductByName(string name)
+        {
+            return _productRepository.GetAll().Where(x => x.Name.Contains(name));
+        }
     }
 }

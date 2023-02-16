@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using backend_burgueria.Models;
 
 namespace backend_burgueria.Domain.Interfaces.Repositories
 {
-    public interface IProductRepository
+    public interface IProductRepository : IBaseRepository<Product>
     {
     }
 }

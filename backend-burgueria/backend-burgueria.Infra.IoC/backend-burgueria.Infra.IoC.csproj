@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>backend_burgueria.Infra.IoC</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\backend-burgueria.Application\backend-burgueria.Application.csproj" />
+    <ProjectReference Include="..\backend-burgueria.Domain\backend-burgueria.Domain.csproj" />
+    <ProjectReference Include="..\backend-burgueria.Infra.Data\backend-burgueria.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

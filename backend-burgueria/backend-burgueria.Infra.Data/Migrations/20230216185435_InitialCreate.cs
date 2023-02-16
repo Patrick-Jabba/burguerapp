@@ -4,53 +4,53 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace backendburgueria.Migrations
+namespace backend_burgueria.Infra.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class RelacionamentoPedidoProduto : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "order",
+                name: "Orders",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Status = table.Column<string>(type: "text", nullable: true),
+                    Status = table.Column<string>(type: "text", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_order", x => x.Id);
+                    table.PrimaryKey("PK_Orders", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "product",
+                name: "Products",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    name = table.Column<string>(type: "text", nullable: true),
-                    description = table.Column<string>(type: "text", nullable: true),
-                    price = table.Column<double>(type: "double precision", nullable: false),
+                    Name = table.Column<string>(type: "varchar(150)", nullable: false),
+                    Description = table.Column<string>(type: "varchar(300)", nullable: true),
+                    Price = table.Column<double>(type: "double precision", nullable: false),
                     OrderId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_product", x => x.id);
+                    table.PrimaryKey("PK_Products", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_product_order_OrderId",
+                        name: "FK_Products_Orders_OrderId",
                         column: x => x.OrderId,
-                        principalTable: "order",
+                        principalTable: "Orders",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_product_OrderId",
-                table: "product",
+                name: "IX_Products_OrderId",
+                table: "Products",
                 column: "OrderId");
         }
 
@@ -58,10 +58,10 @@ namespace backendburgueria.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "product");
+                name: "Products");
 
             migrationBuilder.DropTable(
-                name: "order");
+                name: "Orders");
         }
     }
 }

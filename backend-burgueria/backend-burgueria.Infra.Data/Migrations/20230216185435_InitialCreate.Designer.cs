@@ -9,18 +9,18 @@ using backend_burgueria.Context;
 
 #nullable disable
 
-namespace backendburgueria.Migrations
+namespace backend_burgueria.Infra.Data.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20221123200045_RelacionamentoPedidoProduto")]
-    partial class RelacionamentoPedidoProduto
+    [Migration("20230216185435_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.0")
+                .HasAnnotation("ProductVersion", "7.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -37,42 +37,40 @@ namespace backendburgueria.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Status")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("order");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("backend_burgueria.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id");
+                        .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
-                        .HasColumnType("text")
-                        .HasColumnName("description");
+                        .HasColumnType("varchar(300)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text")
-                        .HasColumnName("name");
+                        .IsRequired()
+                        .HasColumnType("varchar(150)");
 
                     b.Property<int>("OrderId")
                         .HasColumnType("integer");
 
                     b.Property<double>("Price")
-                        .HasColumnType("double precision")
-                        .HasColumnName("price");
+                        .HasColumnType("double precision");
 
                     b.HasKey("Id");
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("product");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("backend_burgueria.Models.Product", b =>

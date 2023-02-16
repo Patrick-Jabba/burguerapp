@@ -1,6 +1,6 @@
 ﻿using backend_burgueria.Domain.Interfaces.Repositories;
+using backend_burgueria.Domain.Interfaces.Services;
 using backend_burgueria.Models;
-using backend_burgueria.Services;
 
 namespace backend_burgueria.Application.Services
 {

@@ -1,6 +1,6 @@
 using backend_burgueria.Models;
 
-namespace backend_burgueria.Services
+namespace backend_burgueria.Domain.Interfaces.Services
 {
     public interface IProductService
     {

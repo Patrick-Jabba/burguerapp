@@ -1,34 +1,34 @@
 using Microsoft.AspNetCore.Mvc;
 using backend_burgueria.Models;
 using backend_burgueria.Context;
+using backend_burgueria.Domain.Interfaces.Services;
 
 namespace backend_burgueria.Controllers
 {
-  [ApiController]
-  [Route("order")]
-  public class OrderController : ControllerBase
-  {
-    private readonly DataBaseContext _context;
-
-    public OrderController(DataBaseContext context)
+    [ApiController]
+    [Route("order")]
+    public class OrderController : ControllerBase
     {
-        _context = context;
-    }
+        private readonly IOrderService _orderService;
 
-    [HttpGet]
-    public IActionResult GetOrdersList()
-    {
-        var ordersList = _context.Orders.ToList();
+        public OrderController(IOrderService orderService)
+        {
+            _orderService = orderService;
+        }
 
-        return Ok(ordersList);
-    }
+        [HttpGet]
+        public IActionResult GetOrdersList()
+        {
+            var orders = _orderService.GetAllOrders().ToList();
 
-    [HttpPost]
-    public IActionResult CreateOrder(Order order)
-    {
-        _context.Add(order);
-        _context.SaveChanges();
-        return Ok(order);
+            return Ok(orders);
+        }
+
+        [HttpPost]
+        public IActionResult CreateOrder(Order order)
+        {
+            _orderService.CreateOrder(order);
+            return Ok(order);
+        }
     }
-  }
 }

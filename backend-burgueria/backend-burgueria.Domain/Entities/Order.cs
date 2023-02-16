@@ -3,17 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace backend_burgueria.Models
 {
-  [Table("order")]
-  public class Order
-  {
-    [Key]
-    public int Id { get; set; }
+    public class Order
+    {
+        public int Id { get; set; }
+        public string? Status { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public virtual ICollection<Product>? Products { get; set; }
 
-    public string Status { get; set; }
-
-    public DateTime CreatedAt { get; set; }
-
-    public virtual List<Product> Products { get; set; }
-
-  }
+    }
 }

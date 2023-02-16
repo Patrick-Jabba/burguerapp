@@ -4,10 +4,8 @@ using System.Text.Json.Serialization;
 
 namespace backend_burgueria.Models
 {
-  [Table("ingredient")]
   public class Ingredient
   {
-    [Key]
     public int Id { get; set; }
 
     [JsonIgnore]
@@ -16,7 +14,7 @@ namespace backend_burgueria.Models
     [JsonIgnore]
     public int IdCategory { get; set; }
 
-    public virtual List<Product> Products {get; set;}
+    public virtual ICollection<Product>? Products {get; set;}
 
     public int ProductId {get; set;}
 
